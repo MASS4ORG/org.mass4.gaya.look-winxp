@@ -1,0 +1,16 @@
+name: Release brick
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    uses: MASS4ORG/action-brick-release/.github/workflows/release.yml@v1
+    with:
+      twin: false
+      precast: false
+      source-tests: Brick~/Tests/Gaya.Look.WinXp.Tests/Gaya.Look.WinXp.Tests.csproj

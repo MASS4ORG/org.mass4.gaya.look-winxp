@@ -1,0 +1,18 @@
+# Verification only; releases run from release tags in brick-release.yml.
+name: Brick
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  brick:
+    uses: MASS4ORG/action-brick-release/.github/workflows/verify.yml@v1
+    with:
+      twin: false
+      precast: false
+      source-tests: Brick~/Tests/Gaya.Look.WinXp.Tests/Gaya.Look.WinXp.Tests.csproj
