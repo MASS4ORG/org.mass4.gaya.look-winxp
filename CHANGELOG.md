@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+- Fixed: forward release environment secrets to the reusable workflow.
+
 ## [1.0.0]
 
 - First commit
