@@ -9,11 +9,11 @@ permissions:
 
 jobs:
   release:
-    uses: MASS4ORG/action-brick-release/.github/workflows/release.yml@v1
+    uses: MASS4ORG/brick-workflows/.github/workflows/release.yml@v1
     secrets:
-      MASS4_BRICKS_CI_SIGNING_KEY: ${{ secrets.MASS4_BRICKS_CI_SIGNING_KEY }}
-      MASS4_BRICKS_STORE_TOKEN: ${{ secrets.MASS4_BRICKS_STORE_TOKEN }}
+      BRICKS_SIGNING_KEY: ${{ secrets.BRICKS_SIGNING_KEY }}
+      BRICKS_STORE_ACCESS_TOKEN: ${{ secrets.BRICKS_STORE_ACCESS_TOKEN }}
     with:
       twin: false
       precast: false
-      source-tests: Brick~/Tests/Gaya.Look.WinXp.Tests/Gaya.Look.WinXp.Tests.csproj
+      source-tests: Brick~/Tests/MASS4.Gaya.Look.WinXp.Tests/MASS4.Gaya.Look.WinXp.Tests.csproj

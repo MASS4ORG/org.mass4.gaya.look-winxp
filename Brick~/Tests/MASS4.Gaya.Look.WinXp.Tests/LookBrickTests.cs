@@ -5,7 +5,7 @@ using Gaya.Sdk;
 using Microsoft.Extensions.Logging.Abstractions;
 using Xunit;
 
-namespace Gaya.Look.Tests;
+namespace MASS4.Gaya.Look.Tests;
 
 /// <summary>Checks this look brick: it verifies, applies with its own theme and is offered as a look.</summary>
 public sealed class LookBrickTests

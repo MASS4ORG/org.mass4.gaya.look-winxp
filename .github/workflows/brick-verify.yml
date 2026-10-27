@@ -11,8 +11,8 @@ permissions:
 
 jobs:
   brick:
-    uses: MASS4ORG/action-brick-release/.github/workflows/verify.yml@v1
+    uses: MASS4ORG/brick-workflows/.github/workflows/verify.yml@v1
     with:
       twin: false
       precast: false
-      source-tests: Brick~/Tests/Gaya.Look.WinXp.Tests/Gaya.Look.WinXp.Tests.csproj
+      source-tests: Brick~/Tests/MASS4.Gaya.Look.WinXp.Tests/MASS4.Gaya.Look.WinXp.Tests.csproj
