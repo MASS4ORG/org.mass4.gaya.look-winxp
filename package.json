@@ -5,32 +5,24 @@
   "description": "Luna-style rounded controls with glossy gradients, plus the Luna color theme.",
   "author": "MASS4",
   "license": "MIT",
+  "scopes": ["studio"],
+  "engines": {
+    "gaya": ">=0.0"
+  },
+  "categories": ["gaya:look", "gaya:theme"],
+  "keywords": ["look", "retro", "windows", "luna"],
+  "roles": {
+    "tests": "Brick~/Tests"
+  },
   "exclude": [
     "Brick~/Tests",
     ".github",
     ".gitignore",
+    ".local",
     ".script-*.py",
     ".script-*.cs",
-    ".script-*.sh"
+    ".script-*.sh",
+    ".script-*.ps1"
   ],
-  "scopes": [
-    "studio"
-  ],
-  "engines": {
-    "gaya": ">=0.0"
-  },
-  "categories": [
-    "gaya:look",
-    "gaya:theme"
-  ],
-  "keywords": [
-    "look",
-    "retro",
-    "windows",
-    "luna"
-  ],
-  "roles": {
-    "tests": "Brick~/Tests"
-  },
   "bake": "none"
 }
